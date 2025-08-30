@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  # 1. Elasticsearch Service
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.9.0
+    container_name: es01
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false # Easiest for local dev
+      # Give ES enough memory to handle the data. Adjust based on your RAM.
+      - "ES_JAVA_OPTS=-Xms2g -Xmx2g"
+    ports:
+      - "9200:9200"
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+
+  # 2. Backend API Service
+  backend:
+    build: ./backend # Tells Docker to build an image from the 'backend' folder
+    container_name: holiday-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app # Mounts your code, so changes are reflected instantly!
+      - ./data:/data
+    depends_on:
+      - elasticsearch
+    environment:
+      - ELASTICSEARCH_HOST=es01
+
+volumes:
+  esdata: # This named volume will persist your Elasticsearch data

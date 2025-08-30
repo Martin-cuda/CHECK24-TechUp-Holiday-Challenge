@@ -1,0 +1,14 @@
+
+__pycache__/
+*.pyc
+.env
+venv/
+
+default-frontend/node_modules/
+default-frontend/.next/
+default-frontend/.env.local
+
+.idea/
+.vscode/
+
+esdata/
