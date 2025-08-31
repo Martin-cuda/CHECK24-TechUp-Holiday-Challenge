@@ -105,4 +105,13 @@ Thanks for checking this out, this has been a pretty interesting experience and 
 
 
 
-PS: I put this on public since im probably the last one to publish my work and I sincerely doubt anyone would see that abomination of scrambled together code and think to themselves yeah ill copy that. Quite frankly youd be better off vibecoding.
+
+
+
+
+PS: I put this on public since im probably the last one to publish my work and I sincerely doubt anyone would see that abomination of scrambled together code and think to themselves yeah ill copy that. 
+
+Quite frankly youd be better off vibecoding.
+
+
+To be honest i dont think I will actually get like accepted to this programm since there is probably 10 more people that like actually know what they are doing so I chose to have as much fun as possible doing this.
