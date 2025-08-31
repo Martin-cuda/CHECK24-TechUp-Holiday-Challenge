@@ -32,7 +32,7 @@ mealType (Breakfast, All Inclusive, etc.)
 roomType (Double, Apartment, etc.)
 oceanView (boolean)
 
-How to run this thing locally: (maybe you wont need to because I actually hosted this at definitvnichtcheck24.de if this isnt mentioned at the top then it was already too late and I chose sleep instead of that "feature")
+How to run this thing locally: (maybe you wont need to because I actually hosted this at definitvnichtcheck24.xyz because porkbun didnt let me buy the .de domain if this isnt mentioned at the top then it was already too late and I chose sleep instead of that "feature")
 
 Youll need Docker and Docker Compose installed and its a good idea to give Docker at least like 8GB of RAM (if you can stomach it) in its settings. Youll also need about 80GB of free ssd space for the stuff.
 
